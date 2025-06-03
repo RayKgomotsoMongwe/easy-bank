@@ -1,0 +1,17 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.full-width-navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 1rem;
+}
