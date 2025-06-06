@@ -1,17 +1,88 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-body, html {
+/* Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.full-width-navbar {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
   width: 100%;
   background-color: #ffffff;
-  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
 }
 
-.navbar-nav .nav-item {
-  margin: 0 1rem;
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Logo far left */
+.logo {
+  flex: 1;
+}
+.logo img {
+  height: 25px;
+}
+
+/* Center navigation */
+.navbar-nav {
+  display: flex;
+  flex-direction: row; /* <--- Add this line */
+  gap: 2rem;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Links */
+.nav-item .nav-link {
+  text-decoration: none;
+  color: #9698a6;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+  color: #2d314d;
+}
+
+/* Button far right */
+.right-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Button styling */
+.btn {
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #31d35c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2bb152;
 }
